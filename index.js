@@ -17,6 +17,22 @@ $(document).scroll(function(){
 $(function() {
   var twitterApiUrl = "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=Swiip&count=5&callback=?";
   $.getJSON(twitterApiUrl, function(data) {
-    $(".tweet").html(_.template($("#twitter-template").html(), {data: data}));
+    console.log(data);
+    $(".tweets").html(_.template($("#twitter-template").html(), {data: data}));
   });
+
+  var pipesFeedUrl = "http://pipes.yahoo.com/pipes/pipe.run?_id=abd597e918e5e37074de88e6a531cbfe&_render=rss";
+  $.get(pipesFeedUrl, function(data) {
+    var articles = new Array();
+    $(data).find("item").each(function() {
+      articles.push({
+        title: $(this).find("title").text(),
+        link: $(this).find("link").text(),
+        pubDate: $(this).find("pubDate").text(),
+        description: $(this).find("description").text()
+      });
+    });
+    console.log(_.template($("#feed-template").html(), {data: articles}));
+    $(".feed").html(_.template($("#feed-template").html(), {data: articles}));
+  }, "xml");
 });
