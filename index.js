@@ -17,7 +17,6 @@ $(document).scroll(function(){
 $(function() {
   var twitterApiUrl = "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=Swiip&count=5&callback=?";
   $.getJSON(twitterApiUrl, function(data) {
-    console.log(data);
     $(".tweets").html(_.template($("#twitter-template").html(), {data: data}));
   });
 
@@ -32,7 +31,6 @@ $(function() {
         description: $(this).find("description").text()
       });
     });
-    console.log(_.template($("#feed-template").html(), {data: articles}));
     $(".feed").html(_.template($("#feed-template").html(), {data: articles}));
   }, "xml");
 });
