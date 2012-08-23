@@ -16,6 +16,10 @@ body {
   vertical-align: middle;
 }
 
+#bio table img {
+  float: right;
+}
+
 /* Subnav */
 .subnav {
   width: 100%;
