@@ -1,10 +1,24 @@
 /* swiip.github.com */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700');
+
 body {
   padding-top: 10px;
 }
 
+.hero-unit {
+  color: white;
+  padding-left: 200px;
+  background: #b11016 url("img/consultant.png") no-repeat -80px 20px; 
+}
+
+.hero-unit h1 {
+  font-family: "Josefin Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin-bottom: 20px;
+}
+
 .hero-unit img {
   float: right;
+  background: white;
 }
 
 #contacts table {
@@ -14,6 +28,10 @@ body {
 
 #contacts table th, #contacts table td {
   vertical-align: middle;
+}
+
+#os img {
+  float: right;
 }
 
 #bio table th {
