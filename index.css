@@ -5,10 +5,41 @@ body {
   padding-top: 10px;
 }
 
+/* Hero Unit with responsive design ;) */
 .hero-unit {
   color: white;
   padding-left: 200px;
-  background: #b11016 url("img/consultant.png") no-repeat -80px 20px; 
+  background: #b11016 url("img/consultant.png") no-repeat -80px 70px; 
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .hero-unit {
+    padding-left: 60px;
+    background: #b11016 -80px 40px; 
+  }
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .hero-unit {
+    padding-left: 60px;
+    background: #b11016 -80px 40px; 
+  }
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .hero-unit {
+    background: #b11016 url("img/consultant.png") no-repeat -80px 160px; 
+  }
+}
+ 
+/* Large desktop */
+@media (min-width: 1200px) {
+  .hero-unit {
+    background: #b11016 url("img/consultant.png") no-repeat -80px 40px; 
+  }
 }
 
 .hero-unit h1 {
