@@ -91,6 +91,11 @@
                 <td>J'y tiens à jour mon parcours</td>
               </tr>
               <tr>
+                <th><img src="img/contacts/logo-slideshare.png" /></th>
+                <td><a href="http://fr.slideshare.net/Swiip" target="_blank">Présentations</a></td>
+                <td>Très récent, j'espère y publier de nombreuses présentations</td>
+              </tr>
+              <tr>
                 <th colspan="3">Les moins actifs</th>
               </tr>
               <tr>
@@ -122,23 +127,31 @@
         <div class="row">
           <div class="span12">
             <div class="page-header">
-              <h1>Publications <small>Twitter et articles</small></h1>  
+              <h1>Publications <small>Twitter, articles et présentations</small></h1>  
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="span6 tweets">
-            <script id="twitter-template" type="text/x-undrescore-tmpl">
-              <table class="table">
-                <tr><th colspan="2">Twitter</th></tr>
-                <% _.each(data, function(tweet) { %>
-                  <tr>
-                    <td><img src="<%= tweet.user.profile_image_url %>"></td>
-                    <td><%= tweet.text %></td>
-                  </tr>
-                <% }); %>
-              </table>
-            </script>
+          <div class="span6">
+            <div class="tweets">
+              <script id="twitter-template" type="text/x-undrescore-tmpl">
+                <table class="table">
+                  <tr><th colspan="2">Twitter</th></tr>
+                  <% _.each(data, function(tweet) { %>
+                    <tr>
+                      <td><img src="<%= tweet.user.profile_image_url %>"></td>
+                      <td><%= tweet.text %></td>
+                    </tr>
+                  <% }); %>
+                </table>
+              </script>
+            </div>
+            <table class="table">
+              <tr><th colspan="2">SlideShare</th></tr>
+              <tr>
+                <td><iframe src="http://fr.slideshare.net/slideshow/embed_code/14932296?rel=0" width="512" height="421" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://fr.slideshare.net/Swiip/jquery-mobile-phonegap-14932296" title="jQuery Mobile &amp; PhoneGap" target="_blank">jQuery Mobile &amp; PhoneGap</a> </strong> from <strong><a href="http://fr.slideshare.net/Swiip" target="_blank">Swiip</a></strong> </div></td>
+              </tr>
+            </table>
           </div>
           <div class="span6 feed">
             <script id="feed-template" type="text/x-undrescore-tmpl">
@@ -166,6 +179,15 @@
         </div>
         <div class="row">
           <div class="span4">
+            <img src="img/os/logo-lyonjs.png"/>
+            <h2>LyonJS</h2>
+            <p>Site : <a href="http://lyonjs.org" target="_blank">http://lyonjs.org</a></p>
+            <p>Twitter : <a href="https://twitter.com/LyonJS" target="_blank">@LyonJS</a></p>
+            <p>Présentation : <a href="http://fr.slideshare.net/Swiip/jquery-mobile-phonegap-14932296" target="_blank">http://fr.slideshare.net/Swiip/jquery-mobile-phonegap-14932296</a></p>
+            <p>Si ce n'est pas un projet de développement Open Source, il s'agit sans aucun doute d'une implication dans une communauté Open Source car depuis la rentrée 2012 je m'investit dans l'organisation du LyonJS, le "User Group" lyonnais pour le JavaScript</p>
+            <p>Je m'y suis investit d'abord de façon très importante en assurant organisation et présentation pour la réunion du mois d'octobre 2012 avec les sujets jQuery Mobile et PhoneGap et depuis je reste investit au niveau de l'organisation notament par l'annimation du compte Twitter <a href="https://twitter.com/LyonJS" target="_blank">@LyonJS</a></p>
+          </div>
+          <div class="span4">
             <img src="img/os/logo-spring.png"/>
             <h2>Template Spring MVC</h2>
             <p>Sources : <a href="https://github.com/Swiip/jquery-springmvc-jpa" target="_blank">https://github.com/Swiip/jquery-springmvc-jpa</a></p>
@@ -185,6 +207,8 @@
             <p>Genesia est lié au projet Template Spring MVC puisqu'il met en oeuvre à l'échelle le template.</p>
             <p>Malgré un nombre de lignes de code conséquent, Genesia en tant que jeu n'est pas encore opérationnel</p>
           </div>
+        </div>
+        <div class="row">
           <div class="span4">
             <img src="img/bio/logo-archetype.png"/>
             <h2>Archetype JavaScript Framework</h2>
@@ -195,8 +219,6 @@
             <p>S'il fallait définir aujourd'hui Archetype avec les Frameworks JavaScript existant aujourd'hui, Archetype tendait à apporter la richesse des frameworks RequireJS avec le chargement des dépendances et son compilateur et BackboneJS pour la structure MVC de l'interface Web.</p>
             <p>A posteriori, cette experience reste très enrichissante car j'ai la satisfaction de me dire que plusieurs années en avance nos objectifs étaient les bons et l'experience d'avoir développé, communiqué et avoir vécu la gestion d'un projet Open Source.</p>
           </div>
-        </div>
-        <div class="row">
           <div class="span4">
             <img src="img/os/logo-websocket.png"/>
             <h2>WebSocket en pratique</h2>
@@ -210,9 +232,13 @@
             <h2>Shared Whiteboard</h2>
             <p>Blog : à venir</p>
             <p>Sources : <a href="https://github.com/Swiip/shared-whiteboard" target="_blank">https://github.com/Swiip/shared-whiteboard</a></p>
+            <p>Présentation : <a href="http://fr.slideshare.net/Swiip/jquery-mobile-phonegap-14932296" target="_blank">http://fr.slideshare.net/Swiip/jquery-mobile-phonegap-14932296</a></p>
             <p>D'abord une initiative de projet mettant en oeuvre les technologies jQuery Mobile et PhoneGap, j'y ai rapidement ajouté les composantes WebSocket, HTML 5 SVG et MongoDB pour finalement avoir un petit projet mais très complet.</p>
-            <p>J'en ai tiré un article de blog en prenant l'approche de la création d'un service "Cloud". Car au final c'est ce qui est apparu avec ce projet : un service hébergé dans cloud répondant aux normes du cloud : accessibilité multi plateforme, persistances dans le cloud, échange entre les utilisateurs.</p>
+            <p>Ce projet a servi d'application de démonstration pour ma présentation, lors du LyonJS, des outils jQuery Mobile et PhoneGap.</p>
+            <p>Je compte également en tirer un article de blog en prenant l'approche de la création d'un service "Cloud". Car au final c'est ce qui est apparu avec ce projet : un service hébergé dans cloud répondant aux normes du cloud : accessibilité multi plateforme, persistances dans le cloud, échange entre les utilisateurs.</p>
           </div>
+        </div>
+        <div class="row">
           <div class="span4">
             <img src="img/os/logo-maven.png"/>
             <h2>Documentation Maven</h2>
@@ -221,8 +247,6 @@
             <p>J'y ai compilé les explications des concepts, la description des principales options et des conseils de mise en pratique</p>
             <p>La publication de cette documentation via le site <a href="developpez.com">http://developpez.com</a> a été une grande réussite en terme de diffusion et la documentation sert toujours à la communauté francophone même si elle commence à dater</p>
           </div>
-        </div>
-        <div class="row">
           <div class="span4">
             <img src="img/os/logo-lutece.png"/>
             <h2>Lutece</h2>
@@ -272,7 +296,7 @@
                 </td>
               </tr>
               <tr>
-                <td>Avril et Mai 20012</td>
+                <td>Avril et Mai 2012</td>
                 <td>
                   <img src="img/bio/logo-elasticsearch.png"/>
                   <p>Création de l'offre de formation elastisearch de Zenika (<a href="http://www.zenika.com/formation_elasticsearch.html">http://www.zenika.com/formation_elasticsearch.html</a>)</p>
