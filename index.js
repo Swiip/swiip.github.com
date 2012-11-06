@@ -15,10 +15,10 @@ $(document).scroll(function(){
 });
 
 $(function() {
-  var twitterApiUrl = "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=Swiip&count=5&callback=?";
+  /*var twitterApiUrl = "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=Swiip&count=5&callback=?";
   $.getJSON(twitterApiUrl, function(data) {
     $(".tweets").html(_.template($("#twitter-template").html(), {data: data}));
-  });
+  });*/
 
   var pipesFeedUrl = "http://pipes.yahoo.com/pipes/pipe.run?_id=abd597e918e5e37074de88e6a531cbfe&_render=rss";
   $.get(pipesFeedUrl, function(data) {
