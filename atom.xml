@@ -1,0 +1,26 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>swiip.github.com</title>
+ <link href="http://swiip.github.com/atom.xml" rel="self"/>
+ <link href="http://swiip.github.com/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://swiip.github.com/</id>
+ <author>
+   <name>Matthieu Lux</name>
+ </author>
+
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://swiip.github.com{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://swiip.github.com{{ post.id }}</id>
+   <content type="html">{{ post.content | strip_html | truncatewords:50 }}</content>
+</entry>
+ {% endfor %}
+ 
+</feed>
