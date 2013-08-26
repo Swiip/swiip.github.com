@@ -4,24 +4,32 @@ layout: base
 ---
 
 <div class="jumbotron masthead">
-    <div class="consultant">
-        <img class="zenika" src="images/logo-zenika.png"/>
-        <div class="container">
-            <h1>Blog <a href="http://swiip.github.com">swiip.github.com</a></h1>
-            <p>Bienvenue sur le site de Matthieu Lux ou <a href="http://twitter.com/swiip">@Swiip</a></p>
-            <p>Voici mon blog perso, la plupart des articles étant également publiés sur <a href="http://blog.zenika.com">blog.zenika.com</a></p>
-        </div>
+  <div class="consultant">
+    <img class="zenika" src="images/logo-zenika.png"/>
+
+    <div class="container">
+      <h1>Blog</h1>
+
+      <p>Bienvenue sur le site de Matthieu Lux ou <a href="http://twitter.com/swiip">@Swiip</a></p>
+
+      <p>Voici mon blog perso, la plupart des articles étant également publiés sur <a href="http://blog.zenika.com">blog.zenika.com</a>
+      </p>
     </div>
+  </div>
 </div>
 
 
 <div class="container">
-    <div class="row">
-        {% for post in site.posts %}
-            <h2><a href="{{ post.url }}">{{ post.title }}</a><small><time datetime="{{ post.date | date:'%Y-%m-%d' }}" pubdate="pubdate">{{ post.date | date_to_string }}</time></small></h2>
-            {{ post.content | truncatewords:60 }}
-            <p><a href="{{ post.url }}" class="read-more" title="Lire l'article complet">Lire la suite</a></p>
-            <hr>
-        {% endfor %}
-    </div>
+  <div class="row">
+    {% for post in site.posts %}
+    <h2><a href="{{ post.url }}">{{ post.title }}</a>
+      <small>
+        <time datetime="{{ post.date | date:'%Y-%m-%d' }}" pubdate="pubdate">{{ post.date | date_to_string }}</time>
+      </small>
+    </h2>
+    {{ post.content | truncatewords:60 }}
+    <p><a href="{{ post.url }}" class="read-more" title="Lire l'article complet">Lire la suite</a></p>
+    <hr>
+    {% endfor %}
+  </div>
 </div>

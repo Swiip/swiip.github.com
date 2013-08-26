@@ -36,11 +36,11 @@ Toutes mes sources sont disponibles sur GitHub : [https://github.com/Swiip/hello
 Les technologies choisies
 -------------------------
 
-En tant que développeur Web Java, j'ai une plutôt bonne vision des mondes Java et JavaScript. Je ne sais pas si c'est le sentiment général, mais ma vision en commençant est que le leader pour faire du WebSocket n'est pas côté Java mais côté JavaScript avec [Socket.IO|http://socket.io/]. Si je cible principalement des technologies Java, j'ai pris cette implémentation JavaScript comme référence.
+En tant que développeur Web Java, j'ai une plutôt bonne vision des mondes Java et JavaScript. Je ne sais pas si c'est le sentiment général, mais ma vision en commençant est que le leader pour faire du WebSocket n'est pas côté Java mais côté JavaScript avec [Socket.IO](http://socket.io/). Si je cible principalement des technologies Java, j'ai pris cette implémentation JavaScript comme référence.
 
 J'ai récemment assisté à une présentation de Play Framework qui parlait notamment de sa gestion des WebSockets. Comme il est très populaire et que j'avais envie de l'essayer de toute façon, je l'ai choisis pour ma première implémentation.
 
-Et puis il y a la percée de [vert.x|http://vertx.io/] avec des benchs tonitruant sur internet le plaçant devant node.js, je l'ai donc choisi comme deuxième implémentation dans l'idée de voir si le fonctionnel proposé était à la hauteur.
+Et puis il y a la percée de [Vert.x](http://vertx.io/) avec des benchs tonitruant sur internet le plaçant devant node.js, je l'ai donc choisi comme deuxième implémentation dans l'idée de voir si le fonctionnel proposé était à la hauteur.
 
 Pour compléter le panel avec une technologie JEE, j'ai pris comme dernière implémentation la WebSocketServlet de Jetty (je détaillerai pourquoi celle ci et pas Atmosphere ou Tomcat 7).
 

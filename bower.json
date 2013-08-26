@@ -1,0 +1,22 @@
+{
+  "name": "swiip.github.io",
+  "version": "2.1.0",
+  "homepage": "http://swiip.github.io",
+  "authors": [
+    "Matthieu Lux <matthieu.lux@gmail.com>"
+  ],
+  "description": "personal website of matthieu lux",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.0",
+    "modernizr": "~2.6.2"
+  }
+}
