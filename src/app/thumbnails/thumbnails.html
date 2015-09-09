@@ -1,4 +1,8 @@
 <div class="row">
+  <a name="{{ vm.name }}"></a>
+  <div class="col-md-12">
+    <h2 ng-if="vm.title">{{ vm.title }}</h2>
+  </div>
   <div class="col-sm-6 col-md-4" ng-repeat="thumbnail in vm.data | orderBy:'rank'">
     <div class="thumbnail">
       <img class="pull-right" ng-src="assets/images/{{ thumbnail.logo }}" alt="{{ thumbnail.title }}">

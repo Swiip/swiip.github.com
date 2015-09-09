@@ -5,6 +5,6 @@ export /* @ngInject */ function mlThumbnails() {
     scope: {},
     controller: () => {},
     controllerAs: 'vm',
-    bindToController: { data: '=' }
+    bindToController: { name: '=', title: '=', data: '=' }
   };
 }
