@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-sm-6 col-md-4" ng-repeat="thumbnail in vm.data | orderBy:'rank'">
+    <div class="thumbnail">
+      <img class="pull-right" ng-src="assets/images/{{ thumbnail.logo }}" alt="{{ thumbnail.title }}">
+      <div class="caption">
+        <h3>{{ thumbnail.title }}</h3>
+        <p>{{ thumbnail.description }}</p>
+        <p><a ng-href="{{thumbnail.url}}">{{ thumbnail.url }}</a></p>
+      </div>
+    </div>
+  </div>
+</div>
