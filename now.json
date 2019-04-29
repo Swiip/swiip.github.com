@@ -2,6 +2,7 @@
   "version": 2,
   "name": "swiip",
   "public": true,
+  "alias": "swiip.now.sh",
   "routes": [
     { "src": "/api/*", "dest": "index.js" }
   ],
