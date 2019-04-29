@@ -1,7 +1,12 @@
-const { parse } = require('url')
+const express = require("express")
+const {join} = require("path")
 
-module.exports = (req, res) => {
-  const { query } = parse(req.url, true)
-  const { name = 'World' } = query
-  res.end(`Hello ${name}!`)
-}
+const app = express();
+
+const filePath = join(__dirname, "dist", "Swiip.jpg")
+
+app.use((req, res) => {
+  res.sendFile(filePath);
+})
+
+module.exports = app;

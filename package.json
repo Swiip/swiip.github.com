@@ -8,6 +8,7 @@
   "author": "Swiip <matthieu.lux@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.16.4",
     "fs-extra": "^7.0.1"
   }
 }
