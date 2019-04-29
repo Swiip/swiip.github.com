@@ -1,12 +1,13 @@
 {
   "version": 2,
   "name": "swiip",
+  "public": true,
   "routes": [
     { "src": "/api/*", "dest": "index.js" },
-    { "src": "/static/(.*)", "dest": "/dist/$1" },
-    { "src": "/(aya|gptw|zenika)(.*).png", "dest": "/logos/$1$2.png" }
+    { "src": "/static/(.*)", "dest": "/dist/$1" }
   ],
   "builds": [
-    { "src": "index.js", "use": "@now/node" }
+    { "src": "index.js", "use": "@now/node" },
+    { "src": "dist/*", "use": "@node/static" }
   ]
 }
