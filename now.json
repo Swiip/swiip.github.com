@@ -6,7 +6,7 @@
     { "src": "/api/*", "dest": "index.js" }
   ],
   "builds": [
-    { "src": "index.js", "use": "@now/node" },
+    
     { "src": "package.json", "use": "@node/static-build" }
   ]
 }
