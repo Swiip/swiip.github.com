@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "swiip",
+  "routes": [
+    { "src": "/api/*", "dest": "index.js" },
+    { "src": "/static/(.*)", "dest": "/dist/$1" }
+  ],
+  "builds": [
+    { "src": "index.js", "use": "@now/node" },
+    { "src": "dist/*", "use": "@node/static" }
+  ]
+}
