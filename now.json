@@ -3,10 +3,10 @@
   "name": "swiip",
   "routes": [
     { "src": "/api/*", "dest": "index.js" },
-    { "src": "/static/(.*)", "dest": "/dist/$1" }
+    { "src": "/static/(.*)", "dest": "/dist/$1" },
+    { "src": "/(aya|gptw|zenika)(.*).png", "dest": "/logos/$1$2.png" }
   ],
   "builds": [
-    { "src": "index.js", "use": "@now/node" },
-    { "src": "dist/*", "use": "@node/static" }
+    { "src": "index.js", "use": "@now/node" }
   ]
 }
