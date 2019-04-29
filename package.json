@@ -2,7 +2,7 @@
   "name": "swiip.github.com",
   "version": "4.0.0",
   "scripts": {
-    "install": "node ./build.js"
+    "now-build": "node ./build.js"
   },
   "repository": "git@github.com:Swiip/swiip.github.com.git",
   "author": "Swiip <matthieu.lux@gmail.com>",

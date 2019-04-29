@@ -3,11 +3,10 @@
   "name": "swiip",
   "public": true,
   "routes": [
-    { "src": "/api/*", "dest": "index.js" },
-    { "src": "/static/(.*)", "dest": "/dist/$1" }
+    { "src": "/api/*", "dest": "index.js" }
   ],
   "builds": [
     { "src": "index.js", "use": "@now/node" },
-    { "src": "dist/*", "use": "@node/static" }
+    { "src": "package.json", "use": "@node/static-build" }
   ]
 }
